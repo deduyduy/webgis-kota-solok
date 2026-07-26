@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0893857eb9ed74ce799cea91f81b8fc3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0893857eb9ed74ce799cea91f81b8fc3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0893857eb9ed74ce799cea91f81b8fc3 = L.map(
+                "map_0893857eb9ed74ce799cea91f81b8fc3",
+                {
+                    center: [-0.7915, 100.6586],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90538ad564ec362dc4ec14486999a79d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_90538ad564ec362dc4ec14486999a79d.addTo(map_0893857eb9ed74ce799cea91f81b8fc3);
+        
+    
+            var marker_cluster_21cbf902c25fa72c7adc783f83d801a1 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_edc04478f9b3344b62799da4ebba1e49 = L.marker(
+                [-0.8001843, 100.6699455],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_3b541bf5c27ca8207fb10775b8b705c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ef72218e01d086ddf8f2bb228b5cdfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48ea12443389dd7f4aacc87d1e5b83e4 = $(`<div id="html_48ea12443389dd7f4aacc87d1e5b83e4" style="width: 100.0%; height: 100.0%;">         <b>RSUD M. Natsir Solok</b><br>         Kategori: Rumah Sakit<br>         Latitude: -0.8001843<br>         Longitude: 100.6699455         </div>`)[0];
+                popup_5ef72218e01d086ddf8f2bb228b5cdfe.setContent(html_48ea12443389dd7f4aacc87d1e5b83e4);
+            
+        
+
+        marker_edc04478f9b3344b62799da4ebba1e49.bindPopup(popup_5ef72218e01d086ddf8f2bb228b5cdfe)
+        ;
+
+        
+    
+    
+            marker_edc04478f9b3344b62799da4ebba1e49.bindTooltip(
+                `<div>
+                     RSUD M. Natsir Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_edc04478f9b3344b62799da4ebba1e49.setIcon(icon_3b541bf5c27ca8207fb10775b8b705c1);
+            
+    
+            var marker_f69cb3af86cbbe2fc9e4f7cfcf7416a8 = L.marker(
+                [-0.7977527, 100.6676783],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_6a79a1cdece6aaae75c8a1bb07d44c4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_770c72000941bfdb30c8be9656ad15be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2e78658773997d2c3ef4ad1ff3b975b = $(`<div id="html_a2e78658773997d2c3ef4ad1ff3b975b" style="width: 100.0%; height: 100.0%;">         <b>360 meters</b><br>         Kategori: Terminal<br>         Latitude: -0.7977527<br>         Longitude: 100.6676783         </div>`)[0];
+                popup_770c72000941bfdb30c8be9656ad15be.setContent(html_a2e78658773997d2c3ef4ad1ff3b975b);
+            
+        
+
+        marker_f69cb3af86cbbe2fc9e4f7cfcf7416a8.bindPopup(popup_770c72000941bfdb30c8be9656ad15be)
+        ;
+
+        
+    
+    
+            marker_f69cb3af86cbbe2fc9e4f7cfcf7416a8.bindTooltip(
+                `<div>
+                     360 meters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f69cb3af86cbbe2fc9e4f7cfcf7416a8.setIcon(icon_6a79a1cdece6aaae75c8a1bb07d44c4c);
+            
+    
+            var marker_214c429b6cf64275e025302775e878a0 = L.marker(
+                [-0.7895722, 100.6585122],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_83407769b30b3c3a9480786ead346625 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4de479a34d488cbf9b946cfacc6b3cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2034454bf23134f123e71c8506bfd6f = $(`<div id="html_d2034454bf23134f123e71c8506bfd6f" style="width: 100.0%; height: 100.0%;">         <b>Satu Satu Sembilan Coffee House</b><br>         Kategori: cafe<br>         Latitude: -0.7895722<br>         Longitude: 100.6585122         </div>`)[0];
+                popup_d4de479a34d488cbf9b946cfacc6b3cb.setContent(html_d2034454bf23134f123e71c8506bfd6f);
+            
+        
+
+        marker_214c429b6cf64275e025302775e878a0.bindPopup(popup_d4de479a34d488cbf9b946cfacc6b3cb)
+        ;
+
+        
+    
+    
+            marker_214c429b6cf64275e025302775e878a0.bindTooltip(
+                `<div>
+                     Satu Satu Sembilan Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_214c429b6cf64275e025302775e878a0.setIcon(icon_83407769b30b3c3a9480786ead346625);
+            
+    
+            var marker_59655545395ecea05a0f813208572f8b = L.marker(
+                [-0.7868161, 100.6576326],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_1fa04dca067cb366de01f3e0966a0052 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_266707a07d8cc127f70387379715cc8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6940004735acda19dcedcaba3cb7ac03 = $(`<div id="html_6940004735acda19dcedcaba3cb7ac03" style="width: 100.0%; height: 100.0%;">         <b>KSR PMI Kota Solok</b><br>         Kategori: social_facility<br>         Latitude: -0.7868161<br>         Longitude: 100.6576326         </div>`)[0];
+                popup_266707a07d8cc127f70387379715cc8c.setContent(html_6940004735acda19dcedcaba3cb7ac03);
+            
+        
+
+        marker_59655545395ecea05a0f813208572f8b.bindPopup(popup_266707a07d8cc127f70387379715cc8c)
+        ;
+
+        
+    
+    
+            marker_59655545395ecea05a0f813208572f8b.bindTooltip(
+                `<div>
+                     KSR PMI Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59655545395ecea05a0f813208572f8b.setIcon(icon_1fa04dca067cb366de01f3e0966a0052);
+            
+    
+            var marker_b8008eb24a7b95d561993d4009ce794d = L.marker(
+                [-0.7867876, 100.657657],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_2afa1476ea149b602bffd49bf9b83b58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_954935efc3ea9c329e224fdff02b90b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5985773bf14854f50f8199069a03429 = $(`<div id="html_e5985773bf14854f50f8199069a03429" style="width: 100.0%; height: 100.0%;">         <b>POSKO PMI Kota Solok</b><br>         Kategori: social_facility<br>         Latitude: -0.7867876<br>         Longitude: 100.657657         </div>`)[0];
+                popup_954935efc3ea9c329e224fdff02b90b9.setContent(html_e5985773bf14854f50f8199069a03429);
+            
+        
+
+        marker_b8008eb24a7b95d561993d4009ce794d.bindPopup(popup_954935efc3ea9c329e224fdff02b90b9)
+        ;
+
+        
+    
+    
+            marker_b8008eb24a7b95d561993d4009ce794d.bindTooltip(
+                `<div>
+                     POSKO PMI Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8008eb24a7b95d561993d4009ce794d.setIcon(icon_2afa1476ea149b602bffd49bf9b83b58);
+            
+    
+            var marker_de9091f0712a3f1769e95496725deaaa = L.marker(
+                [-0.7868284, 100.6576905],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_fed46de54c8d9c271070ebf5a619f0da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13390a1c66b718ad7ae35545aa39c53d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e9a735941443d92fe09e35d2d1f345b = $(`<div id="html_9e9a735941443d92fe09e35d2d1f345b" style="width: 100.0%; height: 100.0%;">         <b>PMI Kota Solok</b><br>         Kategori: social_facility<br>         Latitude: -0.7868284<br>         Longitude: 100.6576905         </div>`)[0];
+                popup_13390a1c66b718ad7ae35545aa39c53d.setContent(html_9e9a735941443d92fe09e35d2d1f345b);
+            
+        
+
+        marker_de9091f0712a3f1769e95496725deaaa.bindPopup(popup_13390a1c66b718ad7ae35545aa39c53d)
+        ;
+
+        
+    
+    
+            marker_de9091f0712a3f1769e95496725deaaa.bindTooltip(
+                `<div>
+                     PMI Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de9091f0712a3f1769e95496725deaaa.setIcon(icon_fed46de54c8d9c271070ebf5a619f0da);
+            
+    
+            var marker_ec9106ea64c38df5cc66ae4aa2e002ef = L.marker(
+                [-0.8064454, 100.6547787],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_3f743942deffa303dc028d474f08f2d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5886d8c222a23572c0015850b7c50b34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de96f73bcc7cb2b3406aaf55f4ac1500 = $(`<div id="html_de96f73bcc7cb2b3406aaf55f4ac1500" style="width: 100.0%; height: 100.0%;">         <b>Pertamina</b><br>         Kategori: SPBU<br>         Latitude: -0.8064454<br>         Longitude: 100.6547787         </div>`)[0];
+                popup_5886d8c222a23572c0015850b7c50b34.setContent(html_de96f73bcc7cb2b3406aaf55f4ac1500);
+            
+        
+
+        marker_ec9106ea64c38df5cc66ae4aa2e002ef.bindPopup(popup_5886d8c222a23572c0015850b7c50b34)
+        ;
+
+        
+    
+    
+            marker_ec9106ea64c38df5cc66ae4aa2e002ef.bindTooltip(
+                `<div>
+                     Pertamina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec9106ea64c38df5cc66ae4aa2e002ef.setIcon(icon_3f743942deffa303dc028d474f08f2d1);
+            
+    
+            var marker_bafc29d219b545602926f76a2c66e57d = L.marker(
+                [-0.7910523, 100.6517511],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_ac7887ff3737367cde3e196c3b39c86f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_402e539542b5710d25a1606cbb40c75a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db0e71531abc8a865074c0ec72344740 = $(`<div id="html_db0e71531abc8a865074c0ec72344740" style="width: 100.0%; height: 100.0%;">         <b>Pondok Bakso Urat Ratu 25</b><br>         Kategori: restaurant<br>         Latitude: -0.7910523<br>         Longitude: 100.6517511         </div>`)[0];
+                popup_402e539542b5710d25a1606cbb40c75a.setContent(html_db0e71531abc8a865074c0ec72344740);
+            
+        
+
+        marker_bafc29d219b545602926f76a2c66e57d.bindPopup(popup_402e539542b5710d25a1606cbb40c75a)
+        ;
+
+        
+    
+    
+            marker_bafc29d219b545602926f76a2c66e57d.bindTooltip(
+                `<div>
+                     Pondok Bakso Urat Ratu 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bafc29d219b545602926f76a2c66e57d.setIcon(icon_ac7887ff3737367cde3e196c3b39c86f);
+            
+    
+            var marker_a0459f817275ed63d34894368b5baeec = L.marker(
+                [-0.7875713, 100.6456124],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_3cad53ee8aaa06edebd8ee1959af96ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbea3f8f3babe95df01118009ae74bff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e311a9873481b76a3a3c443b4d8822a = $(`<div id="html_8e311a9873481b76a3a3c443b4d8822a" style="width: 100.0%; height: 100.0%;">         <b>Pertamina</b><br>         Kategori: SPBU<br>         Latitude: -0.7875713<br>         Longitude: 100.6456124         </div>`)[0];
+                popup_bbea3f8f3babe95df01118009ae74bff.setContent(html_8e311a9873481b76a3a3c443b4d8822a);
+            
+        
+
+        marker_a0459f817275ed63d34894368b5baeec.bindPopup(popup_bbea3f8f3babe95df01118009ae74bff)
+        ;
+
+        
+    
+    
+            marker_a0459f817275ed63d34894368b5baeec.bindTooltip(
+                `<div>
+                     Pertamina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a0459f817275ed63d34894368b5baeec.setIcon(icon_3cad53ee8aaa06edebd8ee1959af96ce);
+            
+    
+            var marker_9403aaadf7014dfb7a6f4e54ecc440d2 = L.marker(
+                [-0.7896202, 100.6575983],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_5f1012f6780463b724b1be4388b8a732 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1806de00bdcf698f2e0bbaca70cb3b0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d394c34fc0c590540e7e673c588a3a6b = $(`<div id="html_d394c34fc0c590540e7e673c588a3a6b" style="width: 100.0%; height: 100.0%;">         <b>Bank Mandiri</b><br>         Kategori: bank<br>         Latitude: -0.7896202<br>         Longitude: 100.6575983         </div>`)[0];
+                popup_1806de00bdcf698f2e0bbaca70cb3b0d.setContent(html_d394c34fc0c590540e7e673c588a3a6b);
+            
+        
+
+        marker_9403aaadf7014dfb7a6f4e54ecc440d2.bindPopup(popup_1806de00bdcf698f2e0bbaca70cb3b0d)
+        ;
+
+        
+    
+    
+            marker_9403aaadf7014dfb7a6f4e54ecc440d2.bindTooltip(
+                `<div>
+                     Bank Mandiri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9403aaadf7014dfb7a6f4e54ecc440d2.setIcon(icon_5f1012f6780463b724b1be4388b8a732);
+            
+    
+            var marker_e7361ea2b23a48e048f4876a4071d18a = L.marker(
+                [-0.7896326, 100.6577468],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_b65c4d8ba538ee200051e272661852b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c13aaa6b38a9efad6e84c95cecb847a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20e75a4375ba59f70a2707da19862e10 = $(`<div id="html_20e75a4375ba59f70a2707da19862e10" style="width: 100.0%; height: 100.0%;">         <b>Klinik & Apotik Mitra Ptimura</b><br>         Kategori: Puskesmas/Klinik<br>         Latitude: -0.7896326<br>         Longitude: 100.6577468         </div>`)[0];
+                popup_5c13aaa6b38a9efad6e84c95cecb847a.setContent(html_20e75a4375ba59f70a2707da19862e10);
+            
+        
+
+        marker_e7361ea2b23a48e048f4876a4071d18a.bindPopup(popup_5c13aaa6b38a9efad6e84c95cecb847a)
+        ;
+
+        
+    
+    
+            marker_e7361ea2b23a48e048f4876a4071d18a.bindTooltip(
+                `<div>
+                     Klinik & Apotik Mitra Ptimura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7361ea2b23a48e048f4876a4071d18a.setIcon(icon_b65c4d8ba538ee200051e272661852b9);
+            
+    
+            var marker_f6dc00ac90f95ca710801f933b7c1ac2 = L.marker(
+                [-0.789606, 100.6579563],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_e009821c827f2615e0df8fe4f4fa1923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59b25b914f4d527c0aac26878448a1c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd7bd4d40c5c51a185cfed5be21e1059 = $(`<div id="html_bd7bd4d40c5c51a185cfed5be21e1059" style="width: 100.0%; height: 100.0%;">         <b>BTPN</b><br>         Kategori: bank<br>         Latitude: -0.789606<br>         Longitude: 100.6579563         </div>`)[0];
+                popup_59b25b914f4d527c0aac26878448a1c2.setContent(html_bd7bd4d40c5c51a185cfed5be21e1059);
+            
+        
+
+        marker_f6dc00ac90f95ca710801f933b7c1ac2.bindPopup(popup_59b25b914f4d527c0aac26878448a1c2)
+        ;
+
+        
+    
+    
+            marker_f6dc00ac90f95ca710801f933b7c1ac2.bindTooltip(
+                `<div>
+                     BTPN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6dc00ac90f95ca710801f933b7c1ac2.setIcon(icon_e009821c827f2615e0df8fe4f4fa1923);
+            
+    
+            var marker_cdd2d3f38d090f0c39608444c7573e58 = L.marker(
+                [-0.7893371, 100.6595812],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_58e52ad55975b74824fb68749ebaf9a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bea8f96034be4da96db56fbd55d0448b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82ebd9c251da3a66ca6a5293104883e5 = $(`<div id="html_82ebd9c251da3a66ca6a5293104883e5" style="width: 100.0%; height: 100.0%;">         <b>BTN</b><br>         Kategori: bank<br>         Latitude: -0.7893371<br>         Longitude: 100.6595812         </div>`)[0];
+                popup_bea8f96034be4da96db56fbd55d0448b.setContent(html_82ebd9c251da3a66ca6a5293104883e5);
+            
+        
+
+        marker_cdd2d3f38d090f0c39608444c7573e58.bindPopup(popup_bea8f96034be4da96db56fbd55d0448b)
+        ;
+
+        
+    
+    
+            marker_cdd2d3f38d090f0c39608444c7573e58.bindTooltip(
+                `<div>
+                     BTN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdd2d3f38d090f0c39608444c7573e58.setIcon(icon_58e52ad55975b74824fb68749ebaf9a2);
+            
+    
+            var marker_5da9bab22abf83807ac52408b9b21c46 = L.marker(
+                [-0.7891941, 100.66023],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_6dd7ee499a1d2f0ca0f74e0e7bd55383 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16bc08af873dad50acf892f6c899fa2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a26d18894cce44302532b0e43e4142c = $(`<div id="html_7a26d18894cce44302532b0e43e4142c" style="width: 100.0%; height: 100.0%;">         <b>BRI</b><br>         Kategori: bank<br>         Latitude: -0.7891941<br>         Longitude: 100.66023         </div>`)[0];
+                popup_16bc08af873dad50acf892f6c899fa2b.setContent(html_7a26d18894cce44302532b0e43e4142c);
+            
+        
+
+        marker_5da9bab22abf83807ac52408b9b21c46.bindPopup(popup_16bc08af873dad50acf892f6c899fa2b)
+        ;
+
+        
+    
+    
+            marker_5da9bab22abf83807ac52408b9b21c46.bindTooltip(
+                `<div>
+                     BRI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5da9bab22abf83807ac52408b9b21c46.setIcon(icon_6dd7ee499a1d2f0ca0f74e0e7bd55383);
+            
+    
+            var marker_4c3e456b4440a4780b0a2f2935c2f414 = L.marker(
+                [-0.789599, 100.6615811],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_ec9c546f580ab576336e86cad2422e21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be700ae5dd897631384170dcdf810894 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd7bc2b9208a722c23e942ed529bd003 = $(`<div id="html_dd7bc2b9208a722c23e942ed529bd003" style="width: 100.0%; height: 100.0%;">         <b>Ganesha Operation</b><br>         Kategori: prep_school<br>         Latitude: -0.789599<br>         Longitude: 100.6615811         </div>`)[0];
+                popup_be700ae5dd897631384170dcdf810894.setContent(html_dd7bc2b9208a722c23e942ed529bd003);
+            
+        
+
+        marker_4c3e456b4440a4780b0a2f2935c2f414.bindPopup(popup_be700ae5dd897631384170dcdf810894)
+        ;
+
+        
+    
+    
+            marker_4c3e456b4440a4780b0a2f2935c2f414.bindTooltip(
+                `<div>
+                     Ganesha Operation
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c3e456b4440a4780b0a2f2935c2f414.setIcon(icon_ec9c546f580ab576336e86cad2422e21);
+            
+    
+            var marker_cead23cec7c5fa6034f89ac044ce7ca7 = L.marker(
+                [-0.7895347, 100.6586579],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_d1d4ac6a4b7009d6a6bd7c92eaf08d62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45d5ed2423d55fa00dbcdf7fec3282b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab1ed3f05306fa1dd9063d40b6db5c2e = $(`<div id="html_ab1ed3f05306fa1dd9063d40b6db5c2e" style="width: 100.0%; height: 100.0%;">         <b>Klinik & Apotik Assabil</b><br>         Kategori: Puskesmas/Klinik<br>         Latitude: -0.7895347<br>         Longitude: 100.6586579         </div>`)[0];
+                popup_45d5ed2423d55fa00dbcdf7fec3282b0.setContent(html_ab1ed3f05306fa1dd9063d40b6db5c2e);
+            
+        
+
+        marker_cead23cec7c5fa6034f89ac044ce7ca7.bindPopup(popup_45d5ed2423d55fa00dbcdf7fec3282b0)
+        ;
+
+        
+    
+    
+            marker_cead23cec7c5fa6034f89ac044ce7ca7.bindTooltip(
+                `<div>
+                     Klinik & Apotik Assabil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cead23cec7c5fa6034f89ac044ce7ca7.setIcon(icon_d1d4ac6a4b7009d6a6bd7c92eaf08d62);
+            
+    
+            var marker_f8c26a9e1f6a29238a8dabc7fb8c7ea9 = L.marker(
+                [-0.7894895, 100.6582708],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_3150fe7b1ac1e97e303e3d4d580178ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c3e7fc73f3be533b14c5347bca6c30f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_deb1f0912d51fe2bf1f0500e74cc9763 = $(`<div id="html_deb1f0912d51fe2bf1f0500e74cc9763" style="width: 100.0%; height: 100.0%;">         <b>Kimia Farma</b><br>         Kategori: pharmacy<br>         Latitude: -0.7894895<br>         Longitude: 100.6582708         </div>`)[0];
+                popup_7c3e7fc73f3be533b14c5347bca6c30f.setContent(html_deb1f0912d51fe2bf1f0500e74cc9763);
+            
+        
+
+        marker_f8c26a9e1f6a29238a8dabc7fb8c7ea9.bindPopup(popup_7c3e7fc73f3be533b14c5347bca6c30f)
+        ;
+
+        
+    
+    
+            marker_f8c26a9e1f6a29238a8dabc7fb8c7ea9.bindTooltip(
+                `<div>
+                     Kimia Farma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8c26a9e1f6a29238a8dabc7fb8c7ea9.setIcon(icon_3150fe7b1ac1e97e303e3d4d580178ee);
+            
+    
+            var marker_efa24f299f61c85c0b9bc66e204aac1a = L.marker(
+                [-0.7893976, 100.6626786],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_6c2a3d89981f2cb27303f84a0e8b5c7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eac6927bf684efdd66099aa0c20e0945 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18b28e36ddc2dfb242a669ca1f21671c = $(`<div id="html_18b28e36ddc2dfb242a669ca1f21671c" style="width: 100.0%; height: 100.0%;">         <b>RSIA Ananda</b><br>         Kategori: Rumah Sakit<br>         Latitude: -0.7893976<br>         Longitude: 100.6626786         </div>`)[0];
+                popup_eac6927bf684efdd66099aa0c20e0945.setContent(html_18b28e36ddc2dfb242a669ca1f21671c);
+            
+        
+
+        marker_efa24f299f61c85c0b9bc66e204aac1a.bindPopup(popup_eac6927bf684efdd66099aa0c20e0945)
+        ;
+
+        
+    
+    
+            marker_efa24f299f61c85c0b9bc66e204aac1a.bindTooltip(
+                `<div>
+                     RSIA Ananda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efa24f299f61c85c0b9bc66e204aac1a.setIcon(icon_6c2a3d89981f2cb27303f84a0e8b5c7c);
+            
+    
+            var marker_298a6570ad25edf7729b298964d6b52d = L.marker(
+                [-0.7889847, 100.6644421],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_c8364fd92882ca1aa74cf71ba5c1280b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2896123df29be1875bd5d8d8516fde3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86f800506be34272bc10c32da138798d = $(`<div id="html_86f800506be34272bc10c32da138798d" style="width: 100.0%; height: 100.0%;">         <b>Lapau Nasi Bunga Raya</b><br>         Kategori: restaurant<br>         Latitude: -0.7889847<br>         Longitude: 100.6644421         </div>`)[0];
+                popup_e2896123df29be1875bd5d8d8516fde3.setContent(html_86f800506be34272bc10c32da138798d);
+            
+        
+
+        marker_298a6570ad25edf7729b298964d6b52d.bindPopup(popup_e2896123df29be1875bd5d8d8516fde3)
+        ;
+
+        
+    
+    
+            marker_298a6570ad25edf7729b298964d6b52d.bindTooltip(
+                `<div>
+                     Lapau Nasi Bunga Raya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_298a6570ad25edf7729b298964d6b52d.setIcon(icon_c8364fd92882ca1aa74cf71ba5c1280b);
+            
+    
+            var marker_f0f826658c68b2acc2f68c57c921141a = L.marker(
+                [-0.8029275, 100.6608333],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_d87bae13f5ba0f9f457856f085b32ec5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db020355fd894c3a793a438374f705fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fd6f13d6bb390d8f094d94c2aac5bb1 = $(`<div id="html_5fd6f13d6bb390d8f094d94c2aac5bb1" style="width: 100.0%; height: 100.0%;">         <b>Cucian Tunggu</b><br>         Kategori: car_wash<br>         Latitude: -0.8029275<br>         Longitude: 100.6608333         </div>`)[0];
+                popup_db020355fd894c3a793a438374f705fa.setContent(html_5fd6f13d6bb390d8f094d94c2aac5bb1);
+            
+        
+
+        marker_f0f826658c68b2acc2f68c57c921141a.bindPopup(popup_db020355fd894c3a793a438374f705fa)
+        ;
+
+        
+    
+    
+            marker_f0f826658c68b2acc2f68c57c921141a.bindTooltip(
+                `<div>
+                     Cucian Tunggu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0f826658c68b2acc2f68c57c921141a.setIcon(icon_d87bae13f5ba0f9f457856f085b32ec5);
+            
+    
+            var marker_bf3b06432942bcffca485dd052e5cf10 = L.marker(
+                [-0.8002985995979004, 100.6695789390542],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_8bece04a4f599010f5ea7513025ca20c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49e99b853295790ad7744b9241941e82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_932b2ab0855286d801799419cdfe4160 = $(`<div id="html_932b2ab0855286d801799419cdfe4160" style="width: 100.0%; height: 100.0%;">         <b>RSUD M. Natsir Solok</b><br>         Kategori: Rumah Sakit<br>         Latitude: -0.8002985995979004<br>         Longitude: 100.6695789390542         </div>`)[0];
+                popup_49e99b853295790ad7744b9241941e82.setContent(html_932b2ab0855286d801799419cdfe4160);
+            
+        
+
+        marker_bf3b06432942bcffca485dd052e5cf10.bindPopup(popup_49e99b853295790ad7744b9241941e82)
+        ;
+
+        
+    
+    
+            marker_bf3b06432942bcffca485dd052e5cf10.bindTooltip(
+                `<div>
+                     RSUD M. Natsir Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf3b06432942bcffca485dd052e5cf10.setIcon(icon_8bece04a4f599010f5ea7513025ca20c);
+            
+    
+            var marker_63fc128ed975c728f9cd884554b51367 = L.marker(
+                [-0.7731211695259109, 100.62725246866866],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_85d8f9ddfaeda6b5e3b43a911b4dc86a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e76f7953dd2a8eed671ead4af0d7d36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86ddd7bc397279dbaa299877e290b0c8 = $(`<div id="html_86ddd7bc397279dbaa299877e290b0c8" style="width: 100.0%; height: 100.0%;">         <b>SPBU 14.273.558</b><br>         Kategori: SPBU<br>         Latitude: -0.7731211695259109<br>         Longitude: 100.62725246866866         </div>`)[0];
+                popup_8e76f7953dd2a8eed671ead4af0d7d36.setContent(html_86ddd7bc397279dbaa299877e290b0c8);
+            
+        
+
+        marker_63fc128ed975c728f9cd884554b51367.bindPopup(popup_8e76f7953dd2a8eed671ead4af0d7d36)
+        ;
+
+        
+    
+    
+            marker_63fc128ed975c728f9cd884554b51367.bindTooltip(
+                `<div>
+                     SPBU 14.273.558
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63fc128ed975c728f9cd884554b51367.setIcon(icon_85d8f9ddfaeda6b5e3b43a911b4dc86a);
+            
+    
+            var marker_f023e62f3cd3c948ccdd9d48458c7b90 = L.marker(
+                [-0.7891910226235195, 100.66107902528562],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_39505681ea37487fb55f54baafb94e60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01e2b03539adb7c19a9110648dd601bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7562720b1d1b7176f5d0e753dd44bd3 = $(`<div id="html_a7562720b1d1b7176f5d0e753dd44bd3" style="width: 100.0%; height: 100.0%;">         <b>SMA Muhammadiyah</b><br>         Kategori: Sekolah<br>         Latitude: -0.7891910226235195<br>         Longitude: 100.66107902528562         </div>`)[0];
+                popup_01e2b03539adb7c19a9110648dd601bf.setContent(html_a7562720b1d1b7176f5d0e753dd44bd3);
+            
+        
+
+        marker_f023e62f3cd3c948ccdd9d48458c7b90.bindPopup(popup_01e2b03539adb7c19a9110648dd601bf)
+        ;
+
+        
+    
+    
+            marker_f023e62f3cd3c948ccdd9d48458c7b90.bindTooltip(
+                `<div>
+                     SMA Muhammadiyah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f023e62f3cd3c948ccdd9d48458c7b90.setIcon(icon_39505681ea37487fb55f54baafb94e60);
+            
+    
+            var marker_45f400870a4c59c70d245f1e3fffe6b5 = L.marker(
+                [-0.7864653062325866, 100.64422448586285],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_8e87bc5ee6694ec5a06e469d154e6926 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2aea761c6fd4ed284a6ed227042be3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_959462dbca45cc7f69b40ccf650e3f93 = $(`<div id="html_959462dbca45cc7f69b40ccf650e3f93" style="width: 100.0%; height: 100.0%;">         <b>SMKN 1 Kota Solok</b><br>         Kategori: Sekolah<br>         Latitude: -0.7864653062325866<br>         Longitude: 100.64422448586285         </div>`)[0];
+                popup_c2aea761c6fd4ed284a6ed227042be3d.setContent(html_959462dbca45cc7f69b40ccf650e3f93);
+            
+        
+
+        marker_45f400870a4c59c70d245f1e3fffe6b5.bindPopup(popup_c2aea761c6fd4ed284a6ed227042be3d)
+        ;
+
+        
+    
+    
+            marker_45f400870a4c59c70d245f1e3fffe6b5.bindTooltip(
+                `<div>
+                     SMKN 1 Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45f400870a4c59c70d245f1e3fffe6b5.setIcon(icon_8e87bc5ee6694ec5a06e469d154e6926);
+            
+    
+            var marker_94cd5b098e3ea4436febe79caccd8276 = L.marker(
+                [-0.7869595038059956, 100.64285345029361],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_ebb5eb36b53c45e8547a34bd276a1419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad7c15332734852847281ed3e371aea2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cc5c0f1390364473248c534b1632a08 = $(`<div id="html_1cc5c0f1390364473248c534b1632a08" style="width: 100.0%; height: 100.0%;">         <b>SMAN 1 Kota Solok</b><br>         Kategori: Sekolah<br>         Latitude: -0.7869595038059956<br>         Longitude: 100.64285345029361         </div>`)[0];
+                popup_ad7c15332734852847281ed3e371aea2.setContent(html_1cc5c0f1390364473248c534b1632a08);
+            
+        
+
+        marker_94cd5b098e3ea4436febe79caccd8276.bindPopup(popup_ad7c15332734852847281ed3e371aea2)
+        ;
+
+        
+    
+    
+            marker_94cd5b098e3ea4436febe79caccd8276.bindTooltip(
+                `<div>
+                     SMAN 1 Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94cd5b098e3ea4436febe79caccd8276.setIcon(icon_ebb5eb36b53c45e8547a34bd276a1419);
+            
+    
+            var marker_5368b9b2502d2849f79b6dfa7bff51e8 = L.marker(
+                [-0.786106477570561, 100.66057373193702],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_a2111e28936fd7c05ef50f0732c116cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1699fc77f939e70ab0e054416d73fc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83ccbb4862aa8a79337e9b2191f2d4f8 = $(`<div id="html_83ccbb4862aa8a79337e9b2191f2d4f8" style="width: 100.0%; height: 100.0%;">         <b>SMPN 2 Kota Solok</b><br>         Kategori: Sekolah<br>         Latitude: -0.786106477570561<br>         Longitude: 100.66057373193702         </div>`)[0];
+                popup_a1699fc77f939e70ab0e054416d73fc6.setContent(html_83ccbb4862aa8a79337e9b2191f2d4f8);
+            
+        
+
+        marker_5368b9b2502d2849f79b6dfa7bff51e8.bindPopup(popup_a1699fc77f939e70ab0e054416d73fc6)
+        ;
+
+        
+    
+    
+            marker_5368b9b2502d2849f79b6dfa7bff51e8.bindTooltip(
+                `<div>
+                     SMPN 2 Kota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5368b9b2502d2849f79b6dfa7bff51e8.setIcon(icon_a2111e28936fd7c05ef50f0732c116cb);
+            
+    
+            var marker_6ee1058a23aa852b2facd028ba0839be = L.marker(
+                [-0.7856711056248306, 100.66009687344415],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_ce0e46657055c1f8d3fc2ed79515192e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d732663dff2e1f90b337cb54cf77f10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11be69ae685911778864f7a1920bc775 = $(`<div id="html_11be69ae685911778864f7a1920bc775" style="width: 100.0%; height: 100.0%;">         <b>SDN 01 dan 06 Tanjung Paku</b><br>         Kategori: Sekolah<br>         Latitude: -0.7856711056248306<br>         Longitude: 100.66009687344415         </div>`)[0];
+                popup_7d732663dff2e1f90b337cb54cf77f10.setContent(html_11be69ae685911778864f7a1920bc775);
+            
+        
+
+        marker_6ee1058a23aa852b2facd028ba0839be.bindPopup(popup_7d732663dff2e1f90b337cb54cf77f10)
+        ;
+
+        
+    
+    
+            marker_6ee1058a23aa852b2facd028ba0839be.bindTooltip(
+                `<div>
+                     SDN 01 dan 06 Tanjung Paku
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ee1058a23aa852b2facd028ba0839be.setIcon(icon_ce0e46657055c1f8d3fc2ed79515192e);
+            
+    
+            var marker_cc6e5ef11aa93130e22f78622db2c9c4 = L.marker(
+                [-0.791188557131574, 100.65432366861967],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_c545599f8e6f05ba4ff0fc93a1b865a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a9b90d1191580d6816c1e986c010bb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_736d3a2d043bd719284550bddca8bc2a = $(`<div id="html_736d3a2d043bd719284550bddca8bc2a" style="width: 100.0%; height: 100.0%;">         <b>Masjid at-Tauhid</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.791188557131574<br>         Longitude: 100.65432366861967         </div>`)[0];
+                popup_5a9b90d1191580d6816c1e986c010bb3.setContent(html_736d3a2d043bd719284550bddca8bc2a);
+            
+        
+
+        marker_cc6e5ef11aa93130e22f78622db2c9c4.bindPopup(popup_5a9b90d1191580d6816c1e986c010bb3)
+        ;
+
+        
+    
+    
+            marker_cc6e5ef11aa93130e22f78622db2c9c4.bindTooltip(
+                `<div>
+                     Masjid at-Tauhid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc6e5ef11aa93130e22f78622db2c9c4.setIcon(icon_c545599f8e6f05ba4ff0fc93a1b865a5);
+            
+    
+            var marker_c3fcd90f9d88dc2328fd53a803c0320f = L.marker(
+                [-0.7884322500000003, 100.64800065],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_8df8ef42386a0888e2dec211a85c487f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cc682f2f9b8c678d46cb9a75a54f077 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e88e6096a167d7c8733cdb60eec5ab12 = $(`<div id="html_e88e6096a167d7c8733cdb60eec5ab12" style="width: 100.0%; height: 100.0%;">         <b>TK Kartika I-60</b><br>         Kategori: kindergarten<br>         Latitude: -0.7884322500000003<br>         Longitude: 100.64800065         </div>`)[0];
+                popup_7cc682f2f9b8c678d46cb9a75a54f077.setContent(html_e88e6096a167d7c8733cdb60eec5ab12);
+            
+        
+
+        marker_c3fcd90f9d88dc2328fd53a803c0320f.bindPopup(popup_7cc682f2f9b8c678d46cb9a75a54f077)
+        ;
+
+        
+    
+    
+            marker_c3fcd90f9d88dc2328fd53a803c0320f.bindTooltip(
+                `<div>
+                     TK Kartika I-60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3fcd90f9d88dc2328fd53a803c0320f.setIcon(icon_8df8ef42386a0888e2dec211a85c487f);
+            
+    
+            var marker_ea4ec8c6eba99866aa3b21e1749a1542 = L.marker(
+                [-0.7870325773251046, 100.64148410555953],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_4d5556adb29e6def33f3c7e7140c754d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21ff8a7f12ab1027cbd9c78c6265a32b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_558279db9dafea835fbdd08b9e128e4e = $(`<div id="html_558279db9dafea835fbdd08b9e128e4e" style="width: 100.0%; height: 100.0%;">         <b>Masjid Nurul Iman</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.7870325773251046<br>         Longitude: 100.64148410555953         </div>`)[0];
+                popup_21ff8a7f12ab1027cbd9c78c6265a32b.setContent(html_558279db9dafea835fbdd08b9e128e4e);
+            
+        
+
+        marker_ea4ec8c6eba99866aa3b21e1749a1542.bindPopup(popup_21ff8a7f12ab1027cbd9c78c6265a32b)
+        ;
+
+        
+    
+    
+            marker_ea4ec8c6eba99866aa3b21e1749a1542.bindTooltip(
+                `<div>
+                     Masjid Nurul Iman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea4ec8c6eba99866aa3b21e1749a1542.setIcon(icon_4d5556adb29e6def33f3c7e7140c754d);
+            
+    
+            var marker_b72529be3f814be2cf7ecf38fb47e9fc = L.marker(
+                [-0.7871324368318642, 100.636383332479],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_88f2409a4f7feb52a9098b4f27fa2ecd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70a18337233ba7464ccd956d6b44a21f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fece01c8feea464c4acdf71d789f1d2 = $(`<div id="html_5fece01c8feea464c4acdf71d789f1d2" style="width: 100.0%; height: 100.0%;">         <b>SDN 01 Tanah Garam</b><br>         Kategori: Sekolah<br>         Latitude: -0.7871324368318642<br>         Longitude: 100.636383332479         </div>`)[0];
+                popup_70a18337233ba7464ccd956d6b44a21f.setContent(html_5fece01c8feea464c4acdf71d789f1d2);
+            
+        
+
+        marker_b72529be3f814be2cf7ecf38fb47e9fc.bindPopup(popup_70a18337233ba7464ccd956d6b44a21f)
+        ;
+
+        
+    
+    
+            marker_b72529be3f814be2cf7ecf38fb47e9fc.bindTooltip(
+                `<div>
+                     SDN 01 Tanah Garam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b72529be3f814be2cf7ecf38fb47e9fc.setIcon(icon_88f2409a4f7feb52a9098b4f27fa2ecd);
+            
+    
+            var marker_dddc4da17e88374d283219053185ae9a = L.marker(
+                [-0.7835735278841237, 100.6340127089576],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_53de35b8f93533ca7afb4f36f8448788 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e078e15c3c5b855c99cfd3a728ed40c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c43d1ed8c7b1e4bae17eaea823ebec1a = $(`<div id="html_c43d1ed8c7b1e4bae17eaea823ebec1a" style="width: 100.0%; height: 100.0%;">         <b>Musholla Fisabilillah</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.7835735278841237<br>         Longitude: 100.6340127089576         </div>`)[0];
+                popup_8e078e15c3c5b855c99cfd3a728ed40c.setContent(html_c43d1ed8c7b1e4bae17eaea823ebec1a);
+            
+        
+
+        marker_dddc4da17e88374d283219053185ae9a.bindPopup(popup_8e078e15c3c5b855c99cfd3a728ed40c)
+        ;
+
+        
+    
+    
+            marker_dddc4da17e88374d283219053185ae9a.bindTooltip(
+                `<div>
+                     Musholla Fisabilillah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dddc4da17e88374d283219053185ae9a.setIcon(icon_53de35b8f93533ca7afb4f36f8448788);
+            
+    
+            var marker_8a36376576c2a431aeb06420112e03d0 = L.marker(
+                [-0.7757294653078602, 100.6294240466406],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_cca1cf9f957a6c561b57840b18b4d72f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc4f59fbbbc959170d244372207da58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23814c87e265925ef38940de1b655971 = $(`<div id="html_23814c87e265925ef38940de1b655971" style="width: 100.0%; height: 100.0%;">         <b>Masjid Nurul Hidaiyah</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.7757294653078602<br>         Longitude: 100.6294240466406         </div>`)[0];
+                popup_2bc4f59fbbbc959170d244372207da58.setContent(html_23814c87e265925ef38940de1b655971);
+            
+        
+
+        marker_8a36376576c2a431aeb06420112e03d0.bindPopup(popup_2bc4f59fbbbc959170d244372207da58)
+        ;
+
+        
+    
+    
+            marker_8a36376576c2a431aeb06420112e03d0.bindTooltip(
+                `<div>
+                     Masjid Nurul Hidaiyah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a36376576c2a431aeb06420112e03d0.setIcon(icon_cca1cf9f957a6c561b57840b18b4d72f);
+            
+    
+            var marker_345ca17e3c8b2e8eb7a0adf58b8ea764 = L.marker(
+                [-0.7866461563872095, 100.65966292005763],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_9e3f6a3ffe990947d669eb8e34205b39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b652eddf14697b5a7744091000788081 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d752d43c0f9146a79b72d5b0eff4c1c = $(`<div id="html_4d752d43c0f9146a79b72d5b0eff4c1c" style="width: 100.0%; height: 100.0%;">         <b>Masjid al-Fithrah</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.7866461563872095<br>         Longitude: 100.65966292005763         </div>`)[0];
+                popup_b652eddf14697b5a7744091000788081.setContent(html_4d752d43c0f9146a79b72d5b0eff4c1c);
+            
+        
+
+        marker_345ca17e3c8b2e8eb7a0adf58b8ea764.bindPopup(popup_b652eddf14697b5a7744091000788081)
+        ;
+
+        
+    
+    
+            marker_345ca17e3c8b2e8eb7a0adf58b8ea764.bindTooltip(
+                `<div>
+                     Masjid al-Fithrah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_345ca17e3c8b2e8eb7a0adf58b8ea764.setIcon(icon_9e3f6a3ffe990947d669eb8e34205b39);
+            
+    
+            var marker_38bebd43dc49669cc40a4fa6736e3fe7 = L.marker(
+                [-0.8022911154539246, 100.66721114635313],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_8fd5ad872c262f30a3017f96861f4f52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1ed4092ebf6d5a05536dcf31512b629 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f37a32d26eaaa6e95135c6a97617498 = $(`<div id="html_8f37a32d26eaaa6e95135c6a97617498" style="width: 100.0%; height: 100.0%;">         <b>Surau Aur Kuning</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.8022911154539246<br>         Longitude: 100.66721114635313         </div>`)[0];
+                popup_e1ed4092ebf6d5a05536dcf31512b629.setContent(html_8f37a32d26eaaa6e95135c6a97617498);
+            
+        
+
+        marker_38bebd43dc49669cc40a4fa6736e3fe7.bindPopup(popup_e1ed4092ebf6d5a05536dcf31512b629)
+        ;
+
+        
+    
+    
+            marker_38bebd43dc49669cc40a4fa6736e3fe7.bindTooltip(
+                `<div>
+                     Surau Aur Kuning
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38bebd43dc49669cc40a4fa6736e3fe7.setIcon(icon_8fd5ad872c262f30a3017f96861f4f52);
+            
+    
+            var marker_cc7107ee61c6aeb10a489bebadc28821 = L.marker(
+                [-0.7960218020837279, 100.66319871131199],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_066c496113b3b01ab08043393ce50d11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28f2d3e0c034bd7a4ea9bd801e314eee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462b6b89136497dc655785955203b6d0 = $(`<div id="html_462b6b89136497dc655785955203b6d0" style="width: 100.0%; height: 100.0%;">         <b>Masjid Agung Al-Muhsinin Solok</b><br>         Kategori: Tempat Ibadah<br>         Latitude: -0.7960218020837279<br>         Longitude: 100.66319871131199         </div>`)[0];
+                popup_28f2d3e0c034bd7a4ea9bd801e314eee.setContent(html_462b6b89136497dc655785955203b6d0);
+            
+        
+
+        marker_cc7107ee61c6aeb10a489bebadc28821.bindPopup(popup_28f2d3e0c034bd7a4ea9bd801e314eee)
+        ;
+
+        
+    
+    
+            marker_cc7107ee61c6aeb10a489bebadc28821.bindTooltip(
+                `<div>
+                     Masjid Agung Al-Muhsinin Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc7107ee61c6aeb10a489bebadc28821.setIcon(icon_066c496113b3b01ab08043393ce50d11);
+            
+    
+            var marker_f42c407e57c40fd413b51af7c651089a = L.marker(
+                [-0.7990424416797065, 100.65273093173896],
+                {
+}
+            ).addTo(marker_cluster_21cbf902c25fa72c7adc783f83d801a1);
+        
+    
+            var icon_af39125c7c05949886083140018823f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e15ed0de46a124beb1a29593f66975d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78307aef308910b22204e063faf01ae1 = $(`<div id="html_78307aef308910b22204e063faf01ae1" style="width: 100.0%; height: 100.0%;">         <b>Kantor Walikota Solok</b><br>         Kategori: Kantor Pemerintah<br>         Latitude: -0.7990424416797065<br>         Longitude: 100.65273093173896         </div>`)[0];
+                popup_7e15ed0de46a124beb1a29593f66975d.setContent(html_78307aef308910b22204e063faf01ae1);
+            
+        
+
+        marker_f42c407e57c40fd413b51af7c651089a.bindPopup(popup_7e15ed0de46a124beb1a29593f66975d)
+        ;
+
+        
+    
+    
+            marker_f42c407e57c40fd413b51af7c651089a.bindTooltip(
+                `<div>
+                     Kantor Walikota Solok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f42c407e57c40fd413b51af7c651089a.setIcon(icon_af39125c7c05949886083140018823f5);
+            
+    
+            marker_cluster_21cbf902c25fa72c7adc783f83d801a1.addTo(map_0893857eb9ed74ce799cea91f81b8fc3);
+        
+    
+            var tile_layer_7bf810fe9f380a349c60a91a35523a3a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_142f125160b2b228d703b2ecbb852956 = new L.Control.MiniMap(
+                tile_layer_7bf810fe9f380a349c60a91a35523a3a,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_0893857eb9ed74ce799cea91f81b8fc3.addControl(mini_map_142f125160b2b228d703b2ecbb852956);
+        
+    
+            var layer_control_732a16ffba2872b88397f8dbec0cadf4_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_90538ad564ec362dc4ec14486999a79d,
+                },
+                overlays :  {
+                    "macro_element_21cbf902c25fa72c7adc783f83d801a1" : marker_cluster_21cbf902c25fa72c7adc783f83d801a1,
+                },
+            };
+            let layer_control_732a16ffba2872b88397f8dbec0cadf4 = L.control.layers(
+                layer_control_732a16ffba2872b88397f8dbec0cadf4_layers.base_layers,
+                layer_control_732a16ffba2872b88397f8dbec0cadf4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_0893857eb9ed74ce799cea91f81b8fc3);
+
+        
+    
+            tile_layer_90538ad564ec362dc4ec14486999a79d.addTo(map_0893857eb9ed74ce799cea91f81b8fc3);
+        
+    
+                marker_edc04478f9b3344b62799da4ebba1e49.setIcon(icon_3b541bf5c27ca8207fb10775b8b705c1);
+            
+    
+                marker_f69cb3af86cbbe2fc9e4f7cfcf7416a8.setIcon(icon_6a79a1cdece6aaae75c8a1bb07d44c4c);
+            
+    
+                marker_214c429b6cf64275e025302775e878a0.setIcon(icon_83407769b30b3c3a9480786ead346625);
+            
+    
+                marker_59655545395ecea05a0f813208572f8b.setIcon(icon_1fa04dca067cb366de01f3e0966a0052);
+            
+    
+                marker_b8008eb24a7b95d561993d4009ce794d.setIcon(icon_2afa1476ea149b602bffd49bf9b83b58);
+            
+    
+                marker_de9091f0712a3f1769e95496725deaaa.setIcon(icon_fed46de54c8d9c271070ebf5a619f0da);
+            
+    
+                marker_ec9106ea64c38df5cc66ae4aa2e002ef.setIcon(icon_3f743942deffa303dc028d474f08f2d1);
+            
+    
+                marker_bafc29d219b545602926f76a2c66e57d.setIcon(icon_ac7887ff3737367cde3e196c3b39c86f);
+            
+    
+                marker_a0459f817275ed63d34894368b5baeec.setIcon(icon_3cad53ee8aaa06edebd8ee1959af96ce);
+            
+    
+                marker_9403aaadf7014dfb7a6f4e54ecc440d2.setIcon(icon_5f1012f6780463b724b1be4388b8a732);
+            
+    
+                marker_e7361ea2b23a48e048f4876a4071d18a.setIcon(icon_b65c4d8ba538ee200051e272661852b9);
+            
+    
+                marker_f6dc00ac90f95ca710801f933b7c1ac2.setIcon(icon_e009821c827f2615e0df8fe4f4fa1923);
+            
+    
+                marker_cdd2d3f38d090f0c39608444c7573e58.setIcon(icon_58e52ad55975b74824fb68749ebaf9a2);
+            
+    
+                marker_5da9bab22abf83807ac52408b9b21c46.setIcon(icon_6dd7ee499a1d2f0ca0f74e0e7bd55383);
+            
+    
+                marker_4c3e456b4440a4780b0a2f2935c2f414.setIcon(icon_ec9c546f580ab576336e86cad2422e21);
+            
+    
+                marker_cead23cec7c5fa6034f89ac044ce7ca7.setIcon(icon_d1d4ac6a4b7009d6a6bd7c92eaf08d62);
+            
+    
+                marker_f8c26a9e1f6a29238a8dabc7fb8c7ea9.setIcon(icon_3150fe7b1ac1e97e303e3d4d580178ee);
+            
+    
+                marker_efa24f299f61c85c0b9bc66e204aac1a.setIcon(icon_6c2a3d89981f2cb27303f84a0e8b5c7c);
+            
+    
+                marker_298a6570ad25edf7729b298964d6b52d.setIcon(icon_c8364fd92882ca1aa74cf71ba5c1280b);
+            
+    
+                marker_f0f826658c68b2acc2f68c57c921141a.setIcon(icon_d87bae13f5ba0f9f457856f085b32ec5);
+            
+    
+                marker_bf3b06432942bcffca485dd052e5cf10.setIcon(icon_8bece04a4f599010f5ea7513025ca20c);
+            
+    
+                marker_63fc128ed975c728f9cd884554b51367.setIcon(icon_85d8f9ddfaeda6b5e3b43a911b4dc86a);
+            
+    
+                marker_f023e62f3cd3c948ccdd9d48458c7b90.setIcon(icon_39505681ea37487fb55f54baafb94e60);
+            
+    
+                marker_45f400870a4c59c70d245f1e3fffe6b5.setIcon(icon_8e87bc5ee6694ec5a06e469d154e6926);
+            
+    
+                marker_94cd5b098e3ea4436febe79caccd8276.setIcon(icon_ebb5eb36b53c45e8547a34bd276a1419);
+            
+    
+                marker_5368b9b2502d2849f79b6dfa7bff51e8.setIcon(icon_a2111e28936fd7c05ef50f0732c116cb);
+            
+    
+                marker_6ee1058a23aa852b2facd028ba0839be.setIcon(icon_ce0e46657055c1f8d3fc2ed79515192e);
+            
+    
+                marker_cc6e5ef11aa93130e22f78622db2c9c4.setIcon(icon_c545599f8e6f05ba4ff0fc93a1b865a5);
+            
+    
+                marker_c3fcd90f9d88dc2328fd53a803c0320f.setIcon(icon_8df8ef42386a0888e2dec211a85c487f);
+            
+    
+                marker_ea4ec8c6eba99866aa3b21e1749a1542.setIcon(icon_4d5556adb29e6def33f3c7e7140c754d);
+            
+    
+                marker_b72529be3f814be2cf7ecf38fb47e9fc.setIcon(icon_88f2409a4f7feb52a9098b4f27fa2ecd);
+            
+    
+                marker_dddc4da17e88374d283219053185ae9a.setIcon(icon_53de35b8f93533ca7afb4f36f8448788);
+            
+    
+                marker_8a36376576c2a431aeb06420112e03d0.setIcon(icon_cca1cf9f957a6c561b57840b18b4d72f);
+            
+    
+                marker_345ca17e3c8b2e8eb7a0adf58b8ea764.setIcon(icon_9e3f6a3ffe990947d669eb8e34205b39);
+            
+    
+                marker_38bebd43dc49669cc40a4fa6736e3fe7.setIcon(icon_8fd5ad872c262f30a3017f96861f4f52);
+            
+    
+                marker_cc7107ee61c6aeb10a489bebadc28821.setIcon(icon_066c496113b3b01ab08043393ce50d11);
+            
+    
+                marker_f42c407e57c40fd413b51af7c651089a.setIcon(icon_af39125c7c05949886083140018823f5);
+            
+    
+            marker_cluster_21cbf902c25fa72c7adc783f83d801a1.addTo(map_0893857eb9ed74ce799cea91f81b8fc3);
+        
+</script>
+</html>
